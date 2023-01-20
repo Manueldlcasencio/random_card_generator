@@ -34,16 +34,26 @@ body {
   content: "♦";
   color: red;
 }
-.heart::before,
-.heart::after {
+.heart::before {
   content: "♥";
   color: red;
 }
-.club::before,
-.club::after {
+.heart::after {
+  content: "♥";
+  color: red;
+  rotate: 180deg;
+}
+.club::before {
   content: "♣";
 }
-.spade::before,
+.club::after {
+  content: "♣";
+  rotate: 180deg;
+}
+.spade::before {
+  content: "♠";
+}
 .spade::after {
   content: "♠";
+  rotate: 180deg;
 }
